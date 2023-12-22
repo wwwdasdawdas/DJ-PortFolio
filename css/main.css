@@ -1,0 +1,359 @@
+#wrap {
+    width: 100%;
+    height: 4450px;
+    background-color: #aaffe61a;
+}
+
+#wrap>div:nth-child(1) {
+    padding-top: 80px;
+}
+
+#wrap>div:nth-child(2){
+    padding-top: 170px;
+    box-sizing: border-box;
+}
+
+#wrap>div:nth-child(3) {
+    padding-top: 170px;
+}
+
+#wrap>div:nth-child(4) {
+    padding-top: 170px;
+}
+
+#wrap>div:nth-child(5) {
+    padding-top: 170px;
+}
+
+#wrap #main{
+    
+}
+
+#wrap .in_main{
+    margin: 0 auto;
+    width: 1050px;
+    height: 560px;
+    border-radius: 20px;  
+}
+
+#wrap .in_main > div{
+    width: 1050px;
+    height: 560px;
+    background-color: #aaffe6c2;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #a7a7a73f;
+}
+
+#main h2 {
+    float: left;
+    width: 100%;
+    margin: 300px 0 0 0;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+#main p {
+    float: right;
+    margin: 20px 100px 0 0;
+    font-size: 16px;
+    color: #D6CBC2;
+}
+
+/* 콘텐츠 */
+.in_about{
+    width: 1050px;
+    height: 560px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #a7a7a73f;
+    position: relative;
+}
+
+.in_about h3{
+    font-size: 20px;
+    width: 100px;
+    border-bottom: 2px solid #11EFF7;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+
+
+/* 스킬 부분 */
+#skill .in_skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1050px;
+    height: 560px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #a7a7a73f;
+    position: relative;
+}
+
+.in_skill h3{
+    font-size: 20px;
+    width: 40px;
+    border-bottom: 2px solid #11EFF7;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+
+#skill .skill_list > li{
+    float: left;
+    margin-right: 100px;
+    text-align: center;
+}
+
+#skill .skill_list > li > div {
+    width: 50px;
+    height: 300px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+#skill .skill_list > li > div > .in_box {
+    width: 50px;
+    height: 300px;
+    background-color:  #11EFF7;
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+
+/* 포트폴리오 부분 */
+#portfolio .in_portfolio {
+    width: 1050px;
+    height: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #a7a7a73f;
+    position: relative;
+}
+
+#portfolio .in_portfolio > h3{
+    font-size: 20px;
+    width: 90px;
+    border-bottom: 2px solid #11EFF7;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+
+#portfolio .list{
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 120px;
+    left: 75px;
+}
+
+#portfolio .output{
+    width: 450px;
+}
+
+#portfolio .account{
+    width: 450px;
+    margin-left: 50px;
+    line-height: 50px;
+}
+
+#portfolio .account h3{
+    font-size: 30px;
+}
+
+#portfolio .account p{
+    font-size: 14px;
+}
+
+#portfolio .account button{
+    width: 70px;
+    height: 20px;
+    background-color: #11EFF7;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #a7a7a73f;
+    margin-right: 15px;
+}
+
+#portfolio .list_1{
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 620px;
+    left: 75px;
+}
+
+#portfolio .output_1{
+    width: 450px;
+}
+
+#portfolio .account_1{
+    width: 450px;
+    margin-left: 50px;
+    line-height: 50px;
+}
+
+#portfolio .account_1 h3{
+    font-size: 30px;
+}
+
+#portfolio .account_1 p{
+    font-size: 14px;
+}
+
+#portfolio .account_1 button{
+    width: 70px;
+    height: 20px;
+    background-color: #11EFF7;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #a7a7a73f;
+    margin-right: 15px;
+}
+
+/*메일서버*/
+#end .in_end{
+    width: 1050px;
+    height: 560px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #a7a7a73f;
+    padding-top: 50px;
+}
+
+#end .contact{
+    margin-left: 75px;
+    position: relative;
+}
+
+#end .contact_in{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 300px;
+    top: 75px;
+    line-height: 50px;
+}
+
+#end .contact h3{
+    font-size: 20px;
+    width: 75px;
+    border-bottom: 2px solid #11EFF7;
+}
+
+#end #form{
+    margin-top: 50px;
+}
+
+#end .field{
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.field input {
+    display: block;
+    min-width: 350px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: none;
+    background-color: #aaffe62c;
+}
+
+.field #message{
+    line-height: 8;
+}
+
+.contact_input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80px;
+    height: 25px;
+    background-color: #11EFF7;
+    border-radius: 5px;
+}
+
+.contact_input img{
+    width: 20px;
+    height: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    font-size: 20px;
+    border: none;
+    background-color: #11EFF7;
+    border-radius: 5px;
+}
+
+/* 퀵메뉴 */
+
+#q_mn {
+    position: fixed;
+    right: 60px;
+    top: 80px;
+    z-index: 9999;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #AAFFE5;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+
+#q_mn h3{
+    font-size: 20px;
+}
+
+#q_mn span{
+    font-size: 40px;
+    color: #11EFF7;
+}
+
+#q_mn ul.nav {
+    margin-top: 30px;
+    list-style: none;
+}
+
+#q_mn ul.nav li {
+    margin-bottom: 10px
+}
+
+#q_mn ul.nav li img{
+    width: 14px;
+    height: 14px;
+}
+
+#q_mn ul.nav li a {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#q_mn ul.nav li.on a {
+    color: rgb(15, 15, 15);
+}
