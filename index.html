@@ -10,24 +10,46 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/jquery.js"></script>
     <script src="js/mainjs.js"></script>
+    <LINK href="js/needpopup.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="wrap">
         <!-- 메인 -->
         <div id="main">
-            <div class="in_main">
-                <div>
-                    <h2>
-                        안녕하세요 저는 장두진입니다
-                    </h2>
-                    <p>UX/UI Designer & Multimedia Designer</p>
-                </div>
+            <div class="main_in">
+                <h2>
+                    JANG DU JIN<br>
+                    PORTFOLIO
+                </h2>
+                <p>UX/UI Designer & Multimedia Designer</p> 
             </div>
         </div>
         <!-- 소개 -->
         <div id="about">
             <div class="in_about">
                 <h3>About Me</h3>
+                <div class="in_about_d">
+                    <div class="in_a_l">
+                        <div></div>
+                    </div>
+                    <div class="in_a_r">
+                        <div>
+                            <h4>장두진</h4>
+                            <p>1999.01.29</p>
+                            <p>eorkfl0778@gmail.com</p>
+                        </div>
+                        <div>
+                            <h4>LICENSE</h4>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="plus">
+                            <div class="plus_in">
+                                <h5 class="p_h5">더보기</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 스킬 -->
@@ -84,7 +106,8 @@
                 <h3>PortFolio</h3>
                 <ul class="list">
                     <li class="output">
-                        <div><img src="images/monitor.png" width="100%" alt=""></div>
+                        <div><img src="images/portfolio1.png" width="100%" alt=""></div>
+                        <div class="output_img"><img src="images/mobilepage.png" width="100%" alt=""></div>
                     </li>
                     <li class="account">
                         <h3>프로젝트명</h3>
@@ -92,7 +115,14 @@
                         <p>작업요점</p>
                         <p>사용기술</p>
                         <a href=""><button>코드보기</button></a>
-                        <a href=""><button>결과물보기</button></a>
+                         <!-- 팝업창 버튼 -->
+                        <div class="airbnb popup_btn hvr-underline-from-center">
+                            <a href=""data-needpopup-show="#custom-popup1"><button>결과물보기</button></a>
+                        </div>
+                        <!-- 팝업창 -->
+                        <diV class="needpopup" id="custom-popup1" data-needpopup-options="custom">
+                            <img width="900" src="images/nhn.jpg" alt="">
+                        </div>  
                     </li>
                 </ul>
                 <ul class="list_1">
@@ -105,7 +135,12 @@
                         <p>작업요점</p>
                         <p>사용기술</p>
                         <a href=""><button>코드보기</button></a>
-                        <a href=""><button>결과물보기</button></a>
+                        <div class="airbnb popup_btn hvr-underline-from-center">
+                        <a href=""data-needpopup-show="#custom-popup2   "><button>결과물보기</button></a>
+                        </div>
+                        <diV class="needpopup" id="custom-popup2" data-needpopup-options="custom">
+                            <img width="900" src="" alt="">
+                        </div>  
                     </li>
                 </ul>
             </div>
@@ -146,13 +181,34 @@
         <h3>DU JIN<span>.</span></h3>
         <p>UX/UI Designer & Multimedia Designer</p>
         <ul class="nav">
-            <li><a href="#"><img src="images/home2.png"> Home</a></li>
-            <li><a href="#"><img src="images/about me.png"> ABOUT</a></li>
-            <li><a href="#"><img src="images/skill.png"> SKILL</a></li>
-            <li><a href="#"><img src="images/portfolio.png"> PORTFOLIO</a></li>
-            <li><a href="#"><img src="images/email.png"> CONTACT</a></li>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> ABOUT</a></li>
+            <li><a href="#"> SKILL</a></li>
+            <li><a href="#"> PORTFOLIO</a></li>
+            <li><a href="#"> CONTACT</a></li>
         </ul>
     </div>
+
+<!--팝업.js-->  
+   
+<SCRIPT src="js/needpopup.min.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT>
+        needPopup.config.custom = {
+            'removerPlace': 'outside',
+            'closeOnOutside': false,
+            onShow: function () {
+                console.log('needPopup is shown');
+            },
+            onHide: function () {
+                console.log('needPopup is hidden');
+            }
+        };
+        needPopup.init();
+ </SCRIPT>
+ </BODY>
+ 
+ </HTML>
 </body>
 
 </html>

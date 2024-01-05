@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Pretendard-Regular';
+}
+
 #wrap {
     width: 100%;
-    height: 4450px;
+    height: 4850px;
     background-color: #aaffe61a;
 }
 
@@ -26,39 +37,33 @@
 }
 
 #wrap #main{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/test.png)no-repeat 0 0;
+    background-color: #fff;
     
 }
 
-#wrap .in_main{
+.main_in{
+    width: 1050px;
+    height: 100%;
     margin: 0 auto;
-    width: 1050px;
-    height: 560px;
-    border-radius: 20px;  
+    position: relative;
 }
 
-#wrap .in_main > div{
-    width: 1050px;
-    height: 560px;
-    background-color: #aaffe6c2;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px #a7a7a73f;
-}
-
-#main h2 {
-    float: left;
-    width: 100%;
-    margin: 300px 0 0 0;
-    font-size: 50px;
+.main_in h2{
+    font-size: 70px;
     text-align: right;
-    padding-right: 100px;
-    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 250px;
 }
 
-#main p {
-    float: right;
-    margin: 20px 100px 0 0;
-    font-size: 16px;
-    color: #D6CBC2;
+.main_in p{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 400px;
 }
 
 /* 콘텐츠 */
@@ -80,6 +85,62 @@
     top: 50px;
     left: 75px;
 }
+
+.in_about_d{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 150px;
+    display: flex;
+}
+
+.in_a_l{
+    width: 30%;
+    height: 100%;
+}
+
+.in_a_l > div{
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.in_a_r{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.in_a_r > div {
+    width: 100%;
+    height: 30%;
+    line-height: 40px;
+    color: #2c2c2cc9;
+}
+
+.in_a_r > div h4{
+    font-size: 30px;
+}
+
+.in_a_r > div p{
+    font-size: 20px;
+}
+
+.plus_in{
+    width: 100%;
+    border-bottom: 3px solid #ccc;
+}
+
+.p_h5{
+    width: 45px;
+    font-size: 15px;
+    color: #11EFF7;
+    cursor: pointer;
+}
+
 
 
 /* 스킬 부분 */
@@ -127,6 +188,8 @@
     position: absolute;
     top: 300px;
     left: 0;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 
@@ -161,6 +224,14 @@
 
 #portfolio .output{
     width: 450px;
+    position: relative;
+}
+
+#portfolio .output_img{
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 200px;
 }
 
 #portfolio .account{
@@ -185,7 +256,6 @@
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 3px 3px 3px #a7a7a73f;
-    margin-right: 15px;
 }
 
 #portfolio .list_1{
@@ -319,7 +389,7 @@ input[type="submit"] {
     width: 300px;
     height: 400px;
     border-radius: 20px;
-    background-color: #AAFFE5;
+    background-color: #aaffe61a;
     padding-left: 35px;
     box-sizing: border-box;
 }
@@ -340,6 +410,11 @@ input[type="submit"] {
 
 #q_mn ul.nav li {
     margin-bottom: 10px
+}
+
+#q_mn ul.nav li a:hover{
+    color: #11EFF7;
+    transition: all 0.7s;
 }
 
 #q_mn ul.nav li img{
